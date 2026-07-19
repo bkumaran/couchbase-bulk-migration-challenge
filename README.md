@@ -26,9 +26,9 @@ the final code.
   - Python → `requirements.txt` (Couchbase Python SDK)
   - Java → add your own `pom.xml`/`build.gradle` with the Couchbase Java SDK
 - Put your implementation in `src/`, your tests in `tests/`.
-- You do not need a real Couchbase cluster — mock the SDK for tests, and
-  feel free to point at Couchbase Capella's free tier or a local Docker
-  instance if you want to test against something real.
+- You need a real Couchbase cluster to test against — install Couchbase
+  locally, use Couchbase Capella's free tier, or run a local Docker
+  instance.
 
 ## Task
 
