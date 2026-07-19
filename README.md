@@ -46,8 +46,11 @@ the final code.
     --bucket profiles --bucket-type couchbase --bucket-ramsize 512
   ```
 
-  Connect with `couchbase://localhost`, username `Administrator`, password
-  `password`.
+  Web console: `http://localhost:8091` (username `Administrator`, password
+  `password`).
+
+  Connection string for your script/tests: `couchbase://localhost`, bucket
+  `profiles`, username `Administrator`, password `password`.
 
 ## Task
 
