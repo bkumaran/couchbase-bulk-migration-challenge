@@ -6,3 +6,5 @@ sample_data/profiles/
 sample_data/profiles_single.json
 dead_letter*.json
 .env
+.DS_Store
+.DS_Store
