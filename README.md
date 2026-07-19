@@ -20,10 +20,7 @@ the final code.
 
 ## Setup
 
-- Sample data lives in `sample_data/`. Run `sample_data/generate_sample_data.py`
-  to (re)generate the full 100,000-document set as `sample_data/profiles/`.
-  A handful of pre-generated example files are already included so you can
-  inspect the schema without running anything.
+- Use antonmedv/json-examples as sample data source
 - Pick your language and use the matching dependency file:
   - Node.js → `package.json` (Couchbase Node SDK)
   - Python → `requirements.txt` (Couchbase Python SDK)
