@@ -62,13 +62,14 @@ Prompt the AI to handle inevitable network hiccups.
 
 ### Step 4: Write the Tests
 
-Prompt the AI to generate unit tests to prove the logic works.
+Prompt the AI to generate tests to prove the logic works.
 
 - **Requirement:** We need to know the batching and retry logic actually
   works before running it on production data.
-- **Ask the AI for:** tests using a mocked Couchbase collection/cluster that
+- **Ask the AI for:** tests against your real Couchbase cluster that
   specifically verify (a) documents are grouped into batches correctly and
-  (b) the script retries when a mock error is thrown.
+  (b) the script retries when an induced error (e.g. a bad connection
+  string or a killed connection) occurs.
 
 ## Deliverable
 
