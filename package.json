@@ -1,0 +1,17 @@
+{
+  "name": "couchbase-migration-interview",
+  "version": "1.0.0",
+  "description": "AI-assisted coding interview: bulk migration of user profiles into Couchbase",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "generate-data": "python3 sample_data/generate_sample_data.py"
+  },
+  "dependencies": {
+    "couchbase": "^4.3.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

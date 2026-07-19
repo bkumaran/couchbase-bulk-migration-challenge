@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+sample_data/profiles/
+sample_data/profiles_single.json
+dead_letter*.json
+.env
