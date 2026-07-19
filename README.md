@@ -20,7 +20,7 @@ the final code.
 
 ## Setup
 
-- Use antonmedv/json-examples as sample data source
+- Use [antonmedv/json-examples](https://github.com/antonmedv/json-examples) as sample data source
 - Pick your language and use the matching dependency file:
   - Node.js → `package.json` (Couchbase Node SDK)
   - Python → `requirements.txt` (Couchbase Python SDK)
