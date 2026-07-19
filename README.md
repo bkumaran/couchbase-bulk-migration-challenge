@@ -28,7 +28,26 @@ the final code.
 - Put your implementation in `src/`, your tests in `tests/`.
 - You need a real Couchbase cluster to test against — install Couchbase
   locally, use Couchbase Capella's free tier, or run a local Docker
-  instance.
+  instance. Quick-start for Docker:
+
+  ```bash
+  docker run -d --name couchbase \
+    -p 8091-8096:8091-8096 -p 11210:11210 \
+    couchbase:community-7.2.4
+
+  # wait ~15s for the server to boot, then initialize the cluster and a bucket
+  docker exec couchbase couchbase-cli cluster-init \
+    -c localhost --cluster-username Administrator --cluster-password password \
+    --cluster-ramsize 1024 --cluster-index-ramsize 512 \
+    --services data,index,query
+
+  docker exec couchbase couchbase-cli bucket-create \
+    -c localhost -u Administrator -p password \
+    --bucket profiles --bucket-type couchbase --bucket-ramsize 512
+  ```
+
+  Connect with `couchbase://localhost`, username `Administrator`, password
+  `password`.
 
 ## Task
 
